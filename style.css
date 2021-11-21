@@ -1,0 +1,89 @@
+/* font */
+@font-face {
+    font-family: 'nsB';
+    src: url(Font/NanumSquareB.ttf) format(ttf);
+    font-family: 'nsEB';
+    src: url(Font/NanumSquareEB.ttf) format(ttf);
+    font-family: 'nsR';
+    src: url(Font/NanumSquareR.ttf) format(ttf);
+    font-family: 'spB';
+    src: url(Font/SpoqaHanSansNeo-Bold.ttf);
+    font-family: 'spL';
+    src: url(Font/SpoqaHanSansNeo-Light.ttf);
+    font-family: 'spM';
+    src: url(Font/SpoqaHanSansNeo-Medium.ttf);
+    font-family: 'spR';
+    src: url(Font/SpoqaHanSansNeo-Regular.ttf);
+    font-family: 'spTh';
+    src: url(Font/SpoqaHanSansNeo-Thin.ttf);
+}
+
+.h1{font-family: 'nsB';font-size: 30px;font-stretch: semi-condensed;}
+.h2{font-family: 'nsR';font-size: 28px;padding-left: 20px;}
+.title{font-family: 'spM';font-size: 24px;}
+.body1{font-family: 'spM';font-size: 22px;}
+.body2{font-family: 'spR';font-size: 21px;}
+.caption{font-family: 'spL';font-size: 16px;font-stretch: extra-condensed;}
+.button{font-family: 'spM'; font-size: 16px; font-stretch: extra-expanded;}
+
+box-sizing{border-box;}
+
+/* style the body */
+body{
+    font-family: 'spM'; font-size: 24px;
+    background-color: #171717;
+    color:white;
+}
+
+/* style the top navigation bar */
+.navbar{
+    overflow:hidden;
+    background color: #171717;
+}
+
+/* style the navigation bar links */
+.navbar a{
+    float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover{
+background-color: #171717;
+color: #171717;
+}
+
+/* contents container */
+.contentcon{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* content */
+.content{
+    -ms-flex: 90%;
+    flex: 90%;
+    background-color: #171717;
+}
+
+/* fake image */
+.fakeimg{
+    background-color: gray;
+    width: 100%;
+    padding: 20px;
+}
+
+.mscene{
+    width: 100%;
+    position: relative;
+}
+
+/* text on image*/
+.mscene .mtitle {
+    position: absolute;
+    right:5%;
+    bottom:5%;
+    font-weight: bold;
+    line-height: 1.5%;
+}
